@@ -37,4 +37,11 @@ fun main() {
     println("Element at index: 2 of list2  is : ${list2[2]}")
     println("Element at index: 3 of list2  is : ${list2.get(3)}")
     println("Index of element \"221\" is: ${list2.indexOf(221)} ")
+
+
+    //List Filter
+
+    val foundValueList = list2.filter { it > 25 }
+
+    println(foundValueList)
 }

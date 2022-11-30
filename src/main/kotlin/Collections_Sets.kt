@@ -12,4 +12,8 @@ fun main() {
     mutableSet.forEach{
         print("$it ")
     }
+    println()
+    // Filter Sets
+    val filteredSetAsList = mutableSet.filter { it % 2 == 0}
+    println(filteredSetAsList)
 }

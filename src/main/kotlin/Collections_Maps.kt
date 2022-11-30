@@ -33,4 +33,11 @@ fun main() {
     println()
     map2[3] = "F"
     println(map2)
+    val ls = emptyList<Int>()
+    val st = emptySet<Int>()
+    val mp = emptyMap<Int, Int>()
+
+    // Filter Maps
+    val filteredMap = map2.filter { (key, value) -> key%2==0 && value == "D" }
+    println(filteredMap)
 }
