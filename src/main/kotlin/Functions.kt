@@ -1,6 +1,6 @@
 fun main() {
     sayHello()
-//    calc(1, 20, 3)
+    calc(1, 20, 3)
     // Named Arguments
     println(sum(x = 2, z = 3))
 }

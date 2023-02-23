@@ -33,6 +33,24 @@ fun main() {
         print("$it ")
     }
     println()
+    println("-------Fibonacci Numbers-------")
+    val fibSeq = mutableListOf<Int>()
+    println("Enter a number n>1")
+    val n = readLine()?.toInt()
+    if (n != null) {
+        fibSeq.add(0)
+        if(n==2){
+            fibSeq.add(1)
+        } else{
+            fibSeq.add(1)
+            for(i in 2 until n){
+                var el = fibSeq[i-1] + fibSeq[i-2]
+                fibSeq.add(el)
+            }
+        }
+        print(fibSeq)
+    }
+    println()
     println("No. of elements of Mutable List: ${list2.size}")
     println("Element at index: 2 of list2  is : ${list2[2]}")
     println("Element at index: 3 of list2  is : ${list2.get(3)}")

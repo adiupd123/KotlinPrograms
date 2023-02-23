@@ -1,6 +1,5 @@
 // Top level Variables
 var greeting = "Konichiwa"
-
 fun main(){
     /*
     *  var - mutable
@@ -11,6 +10,7 @@ fun main(){
     val name = "Kotlin"
     println(greeting + " " +  name)
     println("Hello $name")
+    println("${greeting::class.simpleName}")
     // Variables of mutable type
     var x = 10
     var y = 20
