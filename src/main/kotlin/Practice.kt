@@ -24,4 +24,41 @@ fun main(){
     array.forEach {
         print("$it ")
     }
+    println("\n${arr[1]}")
+
+    when(y) {
+        5,6,7 -> {
+            println("when $y")
+        }
+        10 -> {
+            println("when $y")
+        }
+        12 -> {
+            println("when $y")
+        }
+        else -> {
+            println("else of when $y")
+        }
+    }
+    for(i in 5 downTo 1 step 2){
+        println("$i")
+    }
+    for (i in 5 downTo 1)
+        println("$i")
+    var txt= "Kotlin"
+    for(item in txt){
+        print("$item ")
+    }
+    println()
+    for (item in txt.indices) {
+        print("${txt[item]} ")
+    }
+    println()
+    first@ for(i in 1..5){
+        second@ for(j in 1..5){
+            if(j==3 && i==3)
+                break@second
+            println("$i, $j")
+        }
+    }
 }

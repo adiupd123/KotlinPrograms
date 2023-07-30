@@ -16,22 +16,25 @@ fun main() {
 
     val life = true
     val isPositive = true
+    var i = 1
     while(life == true){
-        if(isPositive)
+        if(i== 50)
+            break
+        if(isPositive){
             workHard()
+            i++
+        }
         else
             bePositive()
     }
 }
 
 fun bePositive() {
-    TODO("Not yet implemented")
     println("Work hard")
 
 }
 
 fun workHard() {
-    TODO("Not yet implemented")
     println("Code")
 }
 
@@ -41,6 +44,8 @@ fun add(a: Int, b: Int): Int{
 // Lambda Expression of add()
 val sum: (Int, Int) -> Int = {
         a, b ->
+    println("YO YO")
+    println("HO HO")
     a+b
 }
 
